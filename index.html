@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./style.css">
     <style>
         #logo {
-            width: 190px;
-            height: 190px;
+            width: 100px;
+            height: 100px;
         }
 
         ul {
@@ -24,6 +24,7 @@
 
         a {
             text-decoration: none;
+            color: black;
         }
     </style>
 </head>
@@ -31,7 +32,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="./index.html"><img id="logo" src="./imges/logo-black.svg" alt="logo"></a>
+            <img id="logo" src="./imges/logo-black.svg" alt="logo">
             <nav>
                 <ul class="header-list">
                     <li class="header-item"><a href="#" class="header-link">Херург</a></li>
@@ -41,15 +42,21 @@
                     <li class="header-item"><a href="#" class="header-link">Запис</a></li>
                 </ul>
                 <ul class="header-network-list">
-                    <li class="header-network-item"><svg>
+                    <li class="header-network-item">
+                        <svg class="header-network-svg">
                             <use href="./imges/symbol-defs.svg#icon-facebook"></use>
-                        </svg></li>
-                    <li class="header-network-item"><svg>
+                        </svg>
+                    </li>
+                    <li class="header-network-item">
+                        <svg class="header-network-svg">
                             <use href="./imges/symbol-defs.svg#icon-instagram"></use>
-                        </svg></li>
-                    <li class="header-network-item"><svg>
+                        </svg>
+                    </li>
+                    <li class="header-network-item">
+                        <svg class="header-network-svg">
                             <use href="./imges/symbol-defs.svg#icon-telegram"></use>
-                        </svg></li>
+                        </svg>
+                    </li>
                 </ul>
             </nav>
         </div>
