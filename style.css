@@ -1,13 +1,14 @@
 :root {
---font-family: "Montserrat", sans-serif;;
---second-family: "PT Serif", serif;
+    --font-family: "Montserrat", sans-serif;
+    ;
+    --second-family: "PT Serif", serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0px;
     font-family: var(--font-family);
 }
@@ -23,23 +24,54 @@ body{
     outline: 1px solid red;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
-    justify-content:space-around ;
+    justify-content: space-around;
     align-items: center;
 }
 
-.header-list{
+.header-list {
     display: flex;
+    gap: 20px;
 }
 
-.header-network-list{
-    display: flex;
-    justify-content: space-around;
+.header-item {
+    transition-property: transform;
+    transition-duration: 250ms;
 }
 
-.header-network-svg{
-    width: 20px;
-    height: 20px;
+.header-item:hover {
+    transform: scale(1.25);
+}
+
+.header-network-list {
+    display: flex;
+    gap: 14px;
+}
+
+.header-network-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 100%;
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+.header-network-item:hover {
+    transform: scale(1.20);
+}
+
+.header-network-item>a {
+    width: 17px;
+    height: 17px;
+}
+
+.header-network-svg {
+    width: 17px;
+    height: 17px;
 }
